@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Embedded System Projects</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080b0f;
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            padding: 0 7%;
+            border-bottom: 1px solid #202830;
+        }
+
+        .logo {
+            color: #00ffae;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 25px;
+        }
+
+        .small-title {
+            color: #00ffae;
+            font-family: monospace;
+            letter-spacing: 3px;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 45px;
+        }
+
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            display: block;
+            text-decoration: none;
+            color: white;
+
+            background: #10151a;
+            border: 1px solid #26313a;
+            border-radius: 15px;
+
+            padding: 28px;
+
+            transition: 0.25s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            border-color: #00ffae;
+        }
+
+        .project-number {
+            color: #596773;
+            font-family: monospace;
+            font-size: 13px;
+            margin-bottom: 30px;
+        }
+
+        .project h2 {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #8996a1;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .arrow {
+            display: block;
+            color: #00ffae;
+            margin-top: 25px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        footer {
+            border-top: 1px solid #202830;
+            padding: 30px 7%;
+            color: #687580;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+
+            main {
+                padding: 50px 20px;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            ⚡ Embedded Lab
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <div class="small-title">
+            PROJECT LIBRARY
+        </div>
+
+        <h1>
+            My Arduino Projects
+        </h1>
+
+
+        <div class="project-list">
+
+
+            <!-- PROJECT 01 -->
+
+            <a
+                href="traffic-light.html"
+                class="project"
+            >
+
+                <div class="project-number">
+                    01
+                </div>
+
+                <h2>
+                    Traffic Light
+                </h2>
+
+                <p>
+                    Three LED traffic light control
+                    using Arduino UNO.
+                </p>
+
+                <span class="arrow">
+                    VIEW PROJECT →
+                </span>
+
+            </a>
+
+
+            <!-- PROJECT 02 -->
+
+            <a
+                href="led-blink.html"
+                class="project"
+            >
+
+                <div class="project-number">
+                    02
+                </div>
+
+                <h2>
+                   LED Blink
+                </h2>
+
+                <p>
+                    Basic LED blinking project
+                    using Arduino UNO.
+                </p>
+
+                <span class="arrow">
+                    VIEW PROJECT →
+                </span>
+
+            </a>
+
+
+            <!-- PROJECT 03 -->
+
+            <a
+                href="ultrasonic.html"
+                class="project"
+            >
+
+                <div class="project-number">
+                    03
+                </div>
+
+                <h2>
+                    Sensor
+                </h2>
+
+                <p>
+                    Distance measurement using
+                    HC-SR04 ultrasonic sensor.
+                </p>
+
+                <span class="arrow">
+                    VIEW PROJECT →
+                </span>
+
+            </a>
+
+
+            <!-- PROJECT 04 -->
+
+            <a
+                href="servo-motor.html"
+                class="project"
+            >
+
+                <div class="project-number">
+                    04
+                </div>
+
+                <h2>
+                    Servo Motor
+                </h2>
+
+                <p>
+                    Control a servo motor using
+                    Arduino UNO.
+                </p>
+
+                <span class="arrow">
+                    VIEW PROJECT →
+                </span>
+
+            </a>
+
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        Embedded System • Arduino • Wokwi
+
+    </footer>
+
+
+</body>
+
+</html>

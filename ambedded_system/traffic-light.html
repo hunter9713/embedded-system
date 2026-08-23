@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Arduino Traffic Light</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+        ⚡ Embedded Lab
+    </div>
+
+
+    <a
+        href="index.html"
+        class="home"
+    >
+        HOME
+    </a>
+
+</header>
+
+
+<main>
+
+
+    <a
+        href="index.html"
+        class="back"
+    >
+        ← Back to Projects
+    </a>
+
+
+    <h1>
+        Arduino Traffic Light
+    </h1>
+
+
+    <p class="description">
+
+        Three LED traffic light control
+        using Arduino UNO.
+
+        This project simulates a basic
+        traffic signal using red, yellow
+        and green LEDs.
+
+    </p>
+
+
+    <section>
+
+        <h2>
+            Components
+        </h2>
+
+
+        <div class="components">
+
+            <span class="component">
+                Arduino UNO
+            </span>
+
+            <span class="component">
+                Red LED
+            </span>
+
+            <span class="component">
+                Yellow LED
+            </span>
+
+            <span class="component">
+                Green LED
+            </span>
+
+            <span class="component">
+                220Ω Resistors
+            </span>
+
+            <span class="component">
+                Jumper Wires
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>
+            Wokwi Simulation
+        </h2>
+
+
+        <a
+            href="YOUR_WOKWI_LINK"
+            target="_blank"
+            class="wokwi"
+        >
+            ⚡ OPEN IN WOKWI
+        </a>
+
+    </section>
+
+
+    <section>
+
+        <h2>
+            Arduino Code
+        </h2>
+
+
+        <div class="code-box">
+
+
+            <div class="code-header">
+
+                <span class="code-title">
+                    traffic-light.ino
+                </span>
+
+
+                <button
+                    class="copy"
+                    onclick="copyCode()"
+                >
+                    COPY CODE
+                </button>
+
+            </div>
+
+
+            <pre><code id="arduinoCode">int led13 = 13;
+int led11 = 11;
+int led9 = 9;
+
+void setup() {
+
+    pinMode(led13, OUTPUT);
+    pinMode(led11, OUTPUT);
+    pinMode(led9, OUTPUT);
+
+}
+
+void loop() {
+
+    digitalWrite(led13, HIGH);
+    delay(10000);
+
+    digitalWrite(led13, LOW);
+    delay(30);
+
+
+    digitalWrite(led11, HIGH);
+    delay(15000);
+
+    digitalWrite(led11, LOW);
+    delay(25);
+
+
+    digitalWrite(led9, HIGH);
+    delay(15000);
+
+    digitalWrite(led9, LOW);
+    delay(25);
+
+}</code></pre>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    Embedded System • Arduino • Wokwi
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

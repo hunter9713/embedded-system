@@ -1,0 +1,314 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+
+            background: #080b0f;
+
+            color: white;
+
+            min-height: 100vh;
+        }
+
+
+        header {
+
+            height: 70px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 0 7%;
+
+            border-bottom: 1px solid #202830;
+
+        }
+
+
+        .logo {
+
+            color: #00ffae;
+
+            font-size: 20px;
+
+            font-weight: bold;
+
+        }
+
+
+        .home {
+
+            color: #9aa6b0;
+
+            text-decoration: none;
+
+            font-size: 14px;
+
+        }
+
+
+        .home:hover {
+
+            color: #00ffae;
+
+        }
+
+
+        main {
+
+            max-width: 1000px;
+
+            margin: auto;
+
+            padding: 60px 25px 80px;
+
+        }
+
+
+        .back {
+
+            display: inline-block;
+
+            color: #00ffae;
+
+            text-decoration: none;
+
+            font-size: 13px;
+
+            margin-bottom: 35px;
+
+        }
+
+
+        h1 {
+
+            font-size: 55px;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .description {
+
+            color: #8d99a4;
+
+            font-size: 16px;
+
+            line-height: 1.7;
+
+            max-width: 700px;
+
+            margin-bottom: 45px;
+
+        }
+
+
+        section {
+
+            margin-bottom: 45px;
+
+        }
+
+
+        h2 {
+
+            font-size: 23px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .components {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+        }
+
+
+        .component {
+
+            background: #11181e;
+
+            border: 1px solid #27323a;
+
+            color: #b5c0c8;
+
+            padding: 10px 14px;
+
+            border-radius: 8px;
+
+            font-size: 13px;
+
+        }
+
+
+        .wokwi {
+
+            display: inline-block;
+
+            padding: 13px 20px;
+
+            background: #00ffae;
+
+            color: #06100c;
+
+            text-decoration: none;
+
+            border-radius: 8px;
+
+            font-weight: bold;
+
+            font-size: 14px;
+
+        }
+
+
+        .wokwi:hover {
+
+            opacity: 0.85;
+
+        }
+
+
+        .code-box {
+
+            background: #080c10;
+
+            border: 1px solid #27323a;
+
+            border-radius: 12px;
+
+            overflow: hidden;
+
+        }
+
+
+        .code-header {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 14px 18px;
+
+            background: #11181e;
+
+            border-bottom: 1px solid #27323a;
+
+        }
+
+
+        .code-title {
+
+            color: #00ffae;
+
+            font-family: monospace;
+
+            font-size: 12px;
+
+        }
+
+
+        .copy {
+
+            border: none;
+
+            background: #00ffae;
+
+            color: #06100c;
+
+            padding: 8px 12px;
+
+            border-radius: 6px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+        }
+
+
+        pre {
+
+            margin: 0;
+
+            padding: 25px;
+
+            overflow-x: auto;
+
+            color: #d8e0e6;
+
+            font-family: Consolas, monospace;
+
+            font-size: 13px;
+
+            line-height: 1.7;
+
+        }
+
+
+        .circuit {
+
+            width: 100%;
+
+            max-width: 800px;
+
+            border-radius: 12px;
+
+            border: 1px solid #27323a;
+
+            margin-top: 10px;
+
+        }
+
+
+        footer {
+
+            border-top: 1px solid #202830;
+
+            padding: 30px 7%;
+
+            color: #687580;
+
+            font-size: 13px;
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            h1 {
+
+                font-size: 38px;
+
+            }
+
+            main {
+
+                padding: 45px 20px;
+
+            }
+
+            pre {
+
+                font-size: 12px;
+
+            }
+
+        }
