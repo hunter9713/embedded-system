@@ -65,6 +65,8 @@
     </p>
 
 
+    <!-- COMPONENTS -->
+
     <section>
 
         <h2>
@@ -103,6 +105,8 @@
     </section>
 
 
+    <!-- WOKWI -->
+
     <section>
 
         <h2>
@@ -120,6 +124,8 @@
 
     </section>
 
+
+    <!-- ARDUINO CODE -->
 
     <section>
 
@@ -140,7 +146,7 @@
 
                 <button
                     class="copy"
-                    onclick="copyCode()"
+                    onclick="copyCode('arduinoCode')"
                 >
                     COPY CODE
                 </button>
@@ -168,13 +174,11 @@ void loop() {
     digitalWrite(led13, LOW);
     delay(30);
 
-
     digitalWrite(led11, HIGH);
     delay(15000);
 
     digitalWrite(led11, LOW);
     delay(25);
-
 
     digitalWrite(led9, HIGH);
     delay(15000);
@@ -186,6 +190,57 @@ void loop() {
 
 
         </div>
+
+
+    </section>
+
+
+    <!-- JSON CODE -->
+
+    <section>
+
+        <h2>
+            Wokwi Diagram JSON
+        </h2>
+
+
+        <div class="code-box">
+
+
+            <div class="code-header">
+
+                <span class="code-title">
+                    diagram.json
+                </span>
+
+
+                <button
+                    class="copy"
+                    onclick="copyCode('jsonCode')"
+                >
+                    COPY CODE
+                </button>
+
+            </div>
+
+
+            <pre><code id="jsonCode">{
+
+  "connections": [
+  [ "uno:13", "led1:A", "green", [ "v0" ] ],
+  [ "uno:GND.1", "led1:C", "black", [ "v0" ] ],
+
+  [ "uno:11", "led2:A", "green", [ "v0" ] ],
+  [ "uno:GND.1", "led2:C", "black", [ "v0" ] ],
+
+  [ "uno:9", "led3:A", "green", [ "v0" ] ],
+  [ "uno:GND.1", "led3:C", "black", [ "v0" ] ]
+]
+</code></pre>
+
+
+        </div>
+
 
     </section>
 
@@ -201,6 +256,7 @@ void loop() {
 
 
 <script src="script.js"></script>
+
 
 </body>
 
