@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Arduino Traffic Light</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+        ⚡ Embedded Lab
+    </div>
+
+
+    <a
+        href="index.html"
+        class="home"
+    >
+        HOME
+    </a>
+
+</header>
+
+
+<main>
+
+
+    <a
+        href="index.html"
+        class="back"
+    >
+        ← Back to Projects
+    </a>
+
+
+    <h1>
+        Arduino Traffic Light
+    </h1>
+
+
+    <p class="description">
+
+An automatic street light system that uses an 
+LDR sensor to turn the light ON in darkness and OFF in daylight.
+
+    </p>
+
+
+    <!-- COMPONENTS -->
+
+    <section>
+
+        <h2>
+            Components
+        </h2>
+
+
+        <div class="components">
+
+            <span class="component">
+                Arduino UNO
+            </span>
+
+            <span class="component">
+                Temperature Sensor [TMP36]
+            </span>
+
+            <span class="component">
+                PCF8574-based, 32 (0x20) LCD 16 x 2 (I2C)
+            </span>
+
+            <span class="component">
+                Jumper Wires
+            </span>
+
+        </div>
+
+    </section>
+
+
+   
+
+    <section>
+
+        <h2>
+            Tinkercad Simulation
+        </h2>
+
+
+    </section>
+
+
+    <!-- ARDUINO CODE -->
+
+    <section>
+
+        <h2>
+            Arduino Code
+        </h2>
+
+
+        <div class="code-box">
+
+
+            <div class="code-header">
+
+                <span class="code-title">
+                    temperature_monitoring.ino
+                </span>
+
+
+                <button
+                    class="copy"
+                    onclick="copyCode('arduinoCode')"
+                >
+                    COPY CODE
+                </button>
+
+            </div>
+
+
+            <pre><code id="arduinoCode">
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+
+LiquidCrystal_I2C lcd(0x20, 16, 2);
+
+const int tempPin = A0;
+
+void setup() {
+  Serial.begin(9600);
+
+  lcd.init();
+  lcd.backlight();
+
+  lcd.setCursor(0, 0);
+  lcd.print("TEMP MONITOR");
+
+  delay(1000);
+}
+
+void loop() {
+  int reading = analogRead(tempPin);
+
+  float voltage = reading * 5.0 / 1023.0;
+  float temperature = (voltage - 0.5) * 100.0;
+
+  lcd.setCursor(0, 1);
+  lcd.print("Temp: ");
+  lcd.print(temperature, 1);
+  lcd.write(223);
+  lcd.print("C   ");
+
+  Serial.print("Temperature: ");
+  Serial.print(temperature, 1);
+  Serial.println(" C");
+
+  delay(1000);
+}
+</code></pre>
+
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    Embedded System • Arduino • Tinkercad
+
+</footer>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
